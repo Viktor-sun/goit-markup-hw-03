@@ -382,11 +382,16 @@ ul {
 }
 
 .project-container > li {
-	width: calc((100%-60px) / 3);
+	width: calc((100% - 60px) / 3);
+	margin-right: 30px;
 	margin-bottom: 30px;
 }
 
-.project-container > li:nth-last-child(-n + 3) {
+.project-container > li:nth-child(3n) {
+	margin-right: 0;
+}
+
+.project-container > li:nth-child(n + 7) {
 	margin-bottom: 0;
 }
 
